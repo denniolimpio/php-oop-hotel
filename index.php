@@ -6,7 +6,6 @@ require_once(__DIR__ . '/Camera.php');
 $array_camere = [
   [
       'camera_id' => 1,
-      'camera_numero' => 101,
       'camera_piano' => 1,
       'camera_ospiti' => 2,
       'camera_creata' => '01/01/2018',
@@ -14,7 +13,6 @@ $array_camere = [
      ],
     [
       'camera_id' => 2,
-      'camera_numero' => 201,
       'camera_piano' => 2,
       'camera_ospiti' => 4,
       'camera_creata' => '01/01/2019',
@@ -22,7 +20,6 @@ $array_camere = [
     ],
       [
       'camera_id' => 3,
-      'camera_numero' => 205,
       'camera_piano' => 2,
       'camera_ospiti' => 3,
       'camera_creata' => '01/04/2010',
@@ -30,7 +27,6 @@ $array_camere = [
       ],
       [
       'camera_id' => 4,
-      'camera_numero' => 303,
       'camera_piano' => 3,
       'camera_ospiti' => 1,
       'camera_creata' => '13/11/2011',
@@ -39,7 +35,6 @@ $array_camere = [
       ],
       [
       'camera_id' => 5,
-      'camera_numero' => 408,
       'camera_piano' => 4,
       'camera_ospiti' => 4,
       'camera_creata' => '03/10/2010',
