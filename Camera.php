@@ -7,21 +7,21 @@ class Camera {
 
   public $camera_piano;
 
-  public $camera_max_ospiti;
+  public $camera_ospiti;
 
-  public $camera_created;
+  public $camera_creata;
 
-  public $camera_updated;
+  public $camera_aggiornata;
 
 
-  public function __construct($_camera_id, $_camera_numero, $_camera_piano, $_camera_max_ospiti, $_camera_created, $_camera_updated) {
+  public function __construct($_camera_id, $_camera_numero, $_camera_piano, $_camera_ospiti, $_camera_creata, $_camera_aggiornata) {
 
     $this->camera_id = $_camera_id;
     $this->camera_numero = $_camera_numero;
     $this->camera_piano = $_camera_piano;
-    $this->camera_max_ospiti = $_camera_max_ospiti;
-    $this->camera_created = $_camera_created;
-    $this->camera_updated = $_camera_updated;
+    $this->camera_ospiti = $_camera_ospiti;
+    $this->camera_creata = $_camera_creata;
+    $this->camera_aggiornata = $_camera_aggiornata;
 
   }
 
@@ -30,16 +30,29 @@ class Camera {
       'camera_id' => $this->camera_id,
       'camera_numero' => $this->camera_numero,
       'camera_piano' => $this->camera_piano,
-      'camera_max_ospiti' => $this->camera_max_ospiti,
-      'camera_created' => $this->camera_created,
-      'camera_updated' => $this->camera_updated
+      'camera_ospiti' => $this->camera_ospiti,
+      'camera_creata' => $this->camera_creata,
+      'camera_aggiornata' => $this->camera_aggiornata
 
     ];
   }
+
+  public function setCameraNumero($_camera_numero) {
+    
+    if (!is_int($_camera_numero)) {
+
+      throw new Exception('Errore, devi inserire un numero');
+
+    } else {
+
+      return $this->camera_numero = $_camera_numero;
+    }
+  }
+
 
 
 
 }
 
 
- ?>
+?>
